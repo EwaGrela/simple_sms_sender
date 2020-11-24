@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sending sms</title>
+</head>
+<body>
+    <form method="POST">
+        Send to: <input id="send_to" name="send_to" type="text"><br>
+        Message: <textarea id="textarea" name="message"></textarea><br>
+        Duration: <input id="duration" name="duration" placeholder="enter timeout" type="number", min=1>
+       <select name="duration_unit"> <br>
+          <option value="" disabled selected>Choose unit</option>
+          <option value="1">seconds</option>
+          <option value="2">minutes</option>
+          <option value="3">hours</option>
+       </select><br>
+    
+       <button type="submit" name="action">Submit </button>
+    </form>
+</body>
+</html>
